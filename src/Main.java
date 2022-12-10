@@ -1,7 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        foo();
+        String str = null;
+
+        if (str == null) {
+            try {
+                throw new MyException("Exception");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        //foo();
     }
 
     public static void foo() {
